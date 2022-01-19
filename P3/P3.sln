@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perrašyta su metodai 1.4 u
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skaičiuotuvas su metodais", "Skaičiuotuvas su metodais\Skaičiuotuvas su metodais.csproj", "{B659C9F8-6FC7-4FD6-9AC5-94F3C4E75C2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simboliai", "simboliai\simboliai.csproj", "{E0268363-0531-4BE4-A993-4536BCDE2B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savaites  dienos", "Savaites  dienos\Savaites  dienos.csproj", "{4F64A52A-A479-4916-9E57-45659475D480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savaites dienos su Switch", "Savaites dienos su Switch\Savaites dienos su Switch.csproj", "{528EF342-E37D-4391-A446-FB46658C5153}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +45,18 @@ Global
 		{B659C9F8-6FC7-4FD6-9AC5-94F3C4E75C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B659C9F8-6FC7-4FD6-9AC5-94F3C4E75C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B659C9F8-6FC7-4FD6-9AC5-94F3C4E75C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0268363-0531-4BE4-A993-4536BCDE2B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0268363-0531-4BE4-A993-4536BCDE2B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0268363-0531-4BE4-A993-4536BCDE2B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0268363-0531-4BE4-A993-4536BCDE2B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F64A52A-A479-4916-9E57-45659475D480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F64A52A-A479-4916-9E57-45659475D480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F64A52A-A479-4916-9E57-45659475D480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F64A52A-A479-4916-9E57-45659475D480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528EF342-E37D-4391-A446-FB46658C5153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528EF342-E37D-4391-A446-FB46658C5153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528EF342-E37D-4391-A446-FB46658C5153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528EF342-E37D-4391-A446-FB46658C5153}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

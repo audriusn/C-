@@ -46,8 +46,7 @@ namespace Kelionės_kaina
         private double kaina;
 
         public Degalai(string tipas, double kaina)
-        {
-            
+        { 
             this.tipas = tipas;
             this.kaina = kaina;
         }

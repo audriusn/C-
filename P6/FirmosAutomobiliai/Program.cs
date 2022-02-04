@@ -80,10 +80,10 @@ namespace FirmosAutomobiliai
                 for (int i = 0; i < nkiek; i++)
                 {
                     tarp = A[i];
-                    fr.WriteLine("| {0,-10}| {1,-27} | {2,-9}  |   {3,8:f2}     |",i+1,
+                    fr.WriteLine("| {0,-9}| {1,16}| {2,11}|{3,20:f2}|",i+1,
                         tarp.ImtiPav(), tarp.ImtiDegalus(), tarp.ImtiSanaudas());
                 }
-                fr.WriteLine("--------------------------------------------------------");
+                fr.WriteLine("----------------------------------------------------------------");
             }
         }
     }

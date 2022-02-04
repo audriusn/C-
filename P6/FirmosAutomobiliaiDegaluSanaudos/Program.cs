@@ -90,7 +90,7 @@ namespace FirmosAutomobiliai
                 for (int i = 0; i < nkiek; i++)
                 {
                     tarp = A[i];
-                    fr.WriteLine("| {0,-17} | {1,-9}  |   {2,8:f2}     |",
+                    fr.WriteLine("|{0,-16} | {1,10} | {2,19:f2}|",
                         tarp.ImtiPav(), tarp.ImtiDegalus(), tarp.ImtiSanaudas());
                 }
                 fr.WriteLine("--------------------------------------------------------");

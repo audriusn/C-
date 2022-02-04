@@ -75,8 +75,7 @@ internal class Program
             Pinigai(D, n, 0, 0, 2012, out kiek2012, out sum2012);
             Console.WriteLine("2012 metais pagamintu dviraciu yra {0,3:d}, ir ju vidutinis amzius yra {1,7:f2}", kiek2012, Vidurkis(D,n, 2015,3,3));
 
-            int kiek1000;
-            double sum1000;
+           
             Pinigai(D, n, 0, 0, 1000, out kiek2012, out sum2012);
             Console.WriteLine("1000 metais pagamintu dviraciu yra {0,3:d}, ir ju vidutinis amzius yra {1,7:f2}", kiek2012, Vidurkis(D, n, 2015, 1015, 2015));
 

@@ -41,12 +41,10 @@ namespace Dviratis
             Dviratis[] D1 = new Dviratis[Cn];
             int n1;
             string pav1;
-            int kiekis1;
-
+            
             Dviratis[] D2 = new Dviratis[Cn];
             int n2;
             string pav2;
-            int kiekis2;
 
             Skaityti(CFd1, D1, out n1, out pav1);
             Skaityti(CFd2, D2, out n2, out pav2);
@@ -132,7 +130,7 @@ namespace Dviratis
                 for (int i = 0; i < nkiek; i++)
                 {
                     tarp = D[i];
-                    fr.WriteLine("| {0,-10} | {1,8} |    {2,5:d}| {3,7:F2} |",
+                    fr.WriteLine("| {0,-16}|{1,12}|{2,15:d}| {3,7:F2} |",
                         tarp.ImtiPavadinima(), tarp.ImtiKieki(), tarp.ImtiMetus(), tarp.ImtiKaina());
                 }
                 fr.WriteLine("--------------------------------------------------------------------");

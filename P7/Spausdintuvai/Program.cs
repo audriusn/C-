@@ -248,8 +248,8 @@ namespace Spausdintuvai
         static void Formuoti(Parduotuve D, ref Parduotuve R)
         {
             for (int i = 0; i < D.Imti(); i++)
-                if (!D.Imti(i))
-                    ;
+                if (!D.Imti(i)) ;
+                    
                 else
                     R.Dėti(D.Imti(i));
         }

@@ -37,20 +37,15 @@ namespace Freezer_Shop
         {
             return this.Model.GetHashCode();
         }
-        public static bool operator <=(Fridge first, Fridge second)
+        public int CompareBrand(Fridge other)
         {
-            int p = String.Compare(first.Type, second.Type,StringComparison.CurrentCulture);
-            int v = String.Compare(first.Brand, second.Brand, StringComparison.CurrentCulture);
-            return (p < 0 || (p == 0 && v < 0));
+            return this.Brand.CompareTo(other.Brand);
+        }
+        public int ComparePrice(Fridge other)
+        {
+            return this.Price.CompareTo(other.Price);
         }
 
-        public static bool operator >=(Fridge first, Fridge second)
-        {
-            int p = String.Compare(first.Type, second.Type, StringComparison.CurrentCulture);
-            int v = String.Compare(first.Brand, second.Brand, StringComparison.CurrentCulture);
-            return (p > 0 || (p == 0 && v > 0));
-        }
-        
     }
 }
 

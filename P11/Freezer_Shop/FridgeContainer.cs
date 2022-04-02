@@ -92,22 +92,25 @@ namespace Freezer_Shop
         }
         public void Sort()
         {
-            for (int i = 0; i < this.Count - 1; i++)
+            bool flag = true;
+            while (flag)
             {
-                Fridge film = this.fridges[i];
-                int im = i;
-                for (int j = i + 1; j < this.Count; j++)
-                    if (this.fridges[j] <= film)
+                flag = false;
+                for (int i = 0; i < this.Count - 1; i++)
+                {
+                    Fridge a = this.fridges[i];
+                    Fridge b = this.fridges[i + 1];
+                    if (a.CompareBrand(b) > 0 || (a.CompareBrand(b) == 0 && a.ComparePrice(b) < 0))
                     {
-                        film = this.fridges[j];
-                        im = j;
+                        this.fridges[i] = b;
+                        this.fridges[i + 1] = a;
+                        flag = true;
                     }
-                this.fridges[im] = this.fridges[i];
-                this.fridges[i] = film;
+                }
             }
         }
-        public FridgeContainer(FridgeContainer container) : this()
-        {
+            public FridgeContainer(FridgeContainer container) : this()
+            {
             for (int i = 0; i < container.Count; i++)
             {
                 this.Add(container.Get(i));

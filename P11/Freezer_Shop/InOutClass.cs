@@ -137,7 +137,7 @@ namespace Freezer_Shop
                     lines[i + 1] = String.Format(" {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}", fridge.Get(i).Brand, fridge.Get(i).Model, fridge.Get(i).Volume, fridge.Get(i).EnergyClass, fridge.Get(i).Type,
                          fridge.Get(i).Color, fridge.Get(i).Freezer, fridge.Get(i).Price);
                 }
-                File.WriteAllLines(fileName, lines);
+                File.WriteAllLines(fileName, lines, Encoding.UTF8);
                 Console.WriteLine("Information about fridges was printed in {0}.", fileName);
             }
             else

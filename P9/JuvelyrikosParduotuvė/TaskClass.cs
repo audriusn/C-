@@ -51,7 +51,6 @@ namespace JuvelyrikosParduotuvė
         public static List<Ziedas> HightPrabaRing(List<Ziedas> zied)
         {
             List<Ziedas> RingWeight = new List<Ziedas>();
-            double topWeight = FindMaxWeight(zied);
             foreach (Ziedas ziedas in zied)
             {
                 if (ziedas.Praba  == 950 && ziedas.Metal == "Platina")

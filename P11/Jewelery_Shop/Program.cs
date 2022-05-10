@@ -37,6 +37,7 @@ namespace Jewelery_Shop
             Console.WriteLine();
             //Print ring list to CSV file witch are in both shops
             JewelContainer BothShop = TaskClass.BothShop(cont1, cont2);
+            BothShop.Sort();
             InOutClass.PrintRingsToCSVFile("Visur.csv", BothShop);
             //Make a list of 12 and 13 size ring who cost less than 300 ant print it to CSV file
             JewelContainer SmallSizeLowPrice = new JewelContainer();

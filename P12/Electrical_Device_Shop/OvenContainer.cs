@@ -4,61 +4,61 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Jewelery_Shop
+namespace Electrical_Device_Shop
 {
-     class JewelContainer
+    internal class OvenContainer
     {
-        private Jewel[] jewels;
+        private Oven[] ovens;
         public int Count { get; private set; }
-        public JewelContainer(int capacity = 20)
+        public OvenContainer(int capacity = 50)
         {
-            this.jewels = new Jewel [capacity];
+            this.ovens = new Oven[capacity];
         }
-        public string ShopName { get; set; }
-        public string Address { get; set; }
-        public string PhoneNR { get; set; }
-        public void Add(Jewel jewel)
+
+        public void Add(Oven oven)
         {
             if (this.Count == this.Capacity) // container is full
             {
                 EnsureCapacity(this.Capacity * 2);
             }
-            this.jewels[this.Count++] = jewel;
+            this.ovens[this.Count++] = oven;
         }
         private int Capacity;
         private void EnsureCapacity(int minimumCapacity)
         {
             if (minimumCapacity > this.Capacity)
             {
-                Jewel[] temp = new Jewel[minimumCapacity];
+                Oven[] temp = new Oven[minimumCapacity];
                 for (int i = 0; i < this.Count; i++)
                 {
-                    temp[i] = this.jewels[i];
+                    temp[i] = this.ovens[i];
                 }
                 this.Capacity = minimumCapacity;
-                this.jewels = temp;
+                this.ovens = temp;
             }
         }
-        public Jewel Get(int index)
+        public Oven Get(int index)
         {
-            return this.jewels[index];
+            return this.ovens[index];
         }
-        public bool Contains(Jewel jewel)
+
+        public bool Contains(Oven oven)
         {
             for (int i = 0; i < this.Count; i++)
             {
-                if (this.jewels[i].Equals(jewel))
+                if (this.ovens[i].Equals(oven))
                 {
                     return true;
                 }
             }
             return false;
         }
-        public void Put(int index, Jewel jewel)
+
+        public void Put(int index, Oven oven)
         {
-            this.jewels[index] = jewel;
+            this.ovens[index] = oven;
         }
-        public void Insert(int index, Jewel jewel)
+        public void Insert(int index, Oven oven)
         {
             if (this.Count == this.Capacity)
             {
@@ -66,62 +66,67 @@ namespace Jewelery_Shop
             }
             for (int i = Count + 1; i > index; i--)
             {
-                this.jewels[i] = this.jewels[i - 1];
+                this.ovens[i] = this.ovens[i - 1];
             }
-            this.jewels[index] = jewel;
+            this.ovens[index] = oven;
+
             Count++;
         }
         public void RemoveAt(int index)
         {
             for (int i = index; i < Count; i++)
             {
-                this.jewels[i] = this.jewels[i + 1];
+                this.ovens[i] = this.ovens[i + 1];
             }
             Count--;
         }
-        public void Remove(Jewel jewel)
+        public void Remove(Oven oven)
         {
             for (int i = 0; i < Count; i++)
             {
-                if (this.jewels[i].Name == jewel.Name)
+                if (this.ovens[i].Model == oven.Model)
                 {
                     RemoveAt(i);
                     return;
                 }
             }
         }
-        public void Sort()
+        public void Sort(DeviceComparator comparator)
         {
             bool flag = true;
-            while(flag)
+            while (flag)
             {
                 flag = false;
-                for(int i = 0; i <this.Count-1;i++)
+                for (int i = 0; i < this.Count - 1; i++)
                 {
-                    Jewel a = this.jewels[i];
-                    Jewel b = this.jewels[i + 1];
-                    if(a.CompareManufacture(b) > 0 || (a.CompareManufacture(b) == 0 && a.ComparePrice(b) > 0))
+                    Oven a = this.ovens[i];
+                    Oven b = this.ovens[i + 1];
+                    if (comparator.Compare(a, b) > 0)
                     {
-                        this.jewels[i] = b;
-                        this.jewels[i + 1] = a;
+                        this.ovens[i] = b;
+                        this.ovens[i + 1] = a;
                         flag = true;
                     }
                 }
-            }        
+            }
         }
-        public JewelContainer(JewelContainer container) : this()
+        public void Sort()
+        {
+            Sort(new DeviceComparator());
+        }
+        public OvenContainer(OvenContainer container) : this()
         {
             for (int i = 0; i < container.Count; i++)
             {
                 this.Add(container.Get(i));
             }
         }
-        public JewelContainer Intersect(JewelContainer other)
+        public OvenContainer Intersect(OvenContainer other)
         {
-            JewelContainer result = new JewelContainer();
+            OvenContainer result = new OvenContainer();
             for (int i = 0; i < this.Count; i++)
             {
-                Jewel current = this.jewels[i];
+                Oven current = this.ovens[i];
                 if (other.Contains(current))
                 {
                     result.Add(current);
@@ -129,15 +134,19 @@ namespace Jewelery_Shop
             }
             return result;
         }
-        public int FindMaxPrice()
+        public OvenContainer LowestPriceAPliusEnergyClassOven (OvenContainer oven)
         {
-            int maxPrice = int.MinValue;
+            OvenContainer filtered = new OvenContainer();
+
             for (int i = 0; i < this.Count; i++)
             {
-                if (this.Get(i).Price > maxPrice)
-                    maxPrice = this.Get(i).Price;
+                double minPrice =this.Get(0).Price;
+                if (minPrice > this.Get(i).Price && this.Get(i).EnergyClass == "A+")
+                {
+                    filtered.Add(this.Get(i));
+                }
             }
-            return maxPrice;
+            return filtered;
         }
     }
 }

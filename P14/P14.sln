@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIrmojiProgramaSuGVS", "PIrmojiProgramaSuGVS\PIrmojiProgramaSuGVS.csproj", "{8E306913-8250-4F8C-B655-A45EB58029F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Studentai", "Studentai\Studentai.csproj", "{B14A7DE0-24F4-4248-AE87-9A8C244A7562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentaiListMenu", "StudentaiListMenu\StudentaiListMenu.csproj", "{4494BB20-0379-4A33-A97E-63D86B2EE35D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuristuInformacijosCentras", "TuristuInformacijosCentras\TuristuInformacijosCentras.csproj", "{F3B181EF-ED31-403E-86A1-D59C16D1D8A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB_GUI", "IMDB_GUI\IMDB_GUI.csproj", "{DA745C16-4FDE-4351-9818-001761ACBDBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "National_Team_GUI", "National_Team_GUI\National_Team_GUI.csproj", "{9ED0D1D6-9E0C-4ABE-BD5A-DA0B1FEE270D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E306913-8250-4F8C-B655-A45EB58029F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E306913-8250-4F8C-B655-A45EB58029F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E306913-8250-4F8C-B655-A45EB58029F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E306913-8250-4F8C-B655-A45EB58029F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14A7DE0-24F4-4248-AE87-9A8C244A7562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14A7DE0-24F4-4248-AE87-9A8C244A7562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14A7DE0-24F4-4248-AE87-9A8C244A7562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14A7DE0-24F4-4248-AE87-9A8C244A7562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4494BB20-0379-4A33-A97E-63D86B2EE35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4494BB20-0379-4A33-A97E-63D86B2EE35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4494BB20-0379-4A33-A97E-63D86B2EE35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4494BB20-0379-4A33-A97E-63D86B2EE35D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3B181EF-ED31-403E-86A1-D59C16D1D8A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B181EF-ED31-403E-86A1-D59C16D1D8A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B181EF-ED31-403E-86A1-D59C16D1D8A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B181EF-ED31-403E-86A1-D59C16D1D8A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA745C16-4FDE-4351-9818-001761ACBDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA745C16-4FDE-4351-9818-001761ACBDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA745C16-4FDE-4351-9818-001761ACBDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA745C16-4FDE-4351-9818-001761ACBDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED0D1D6-9E0C-4ABE-BD5A-DA0B1FEE270D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED0D1D6-9E0C-4ABE-BD5A-DA0B1FEE270D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED0D1D6-9E0C-4ABE-BD5A-DA0B1FEE270D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED0D1D6-9E0C-4ABE-BD5A-DA0B1FEE270D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74B0A77E-9FE3-4634-BA3B-C6F4A3EF97AB}
+	EndGlobalSection
+EndGlobal

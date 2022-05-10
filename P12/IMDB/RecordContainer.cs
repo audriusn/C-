@@ -4,61 +4,64 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Jewelery_Shop
+namespace IMDB
 {
-     class JewelContainer
+    internal class RecordContainer
     {
-        private Jewel[] jewels;
+        private Record [] records;
         public int Count { get; private set; }
-        public JewelContainer(int capacity = 20)
+        public RecordContainer(int capacity = 16)
         {
-            this.jewels = new Jewel [capacity];
+            this.records = new Record [capacity];
         }
-        public string ShopName { get; set; }
-        public string Address { get; set; }
-        public string PhoneNR { get; set; }
-        public void Add(Jewel jewel)
+        public string Hname { get; set; }
+        public int birthYear { get; set; }
+        public string city { get; set; }
+
+        public void Add(Record record)
         {
             if (this.Count == this.Capacity) // container is full
             {
                 EnsureCapacity(this.Capacity * 2);
             }
-            this.jewels[this.Count++] = jewel;
+            this.records[this.Count++] = record;
         }
         private int Capacity;
         private void EnsureCapacity(int minimumCapacity)
         {
             if (minimumCapacity > this.Capacity)
             {
-                Jewel[] temp = new Jewel[minimumCapacity];
+                Record[] temp = new Record[minimumCapacity];
                 for (int i = 0; i < this.Count; i++)
                 {
-                    temp[i] = this.jewels[i];
+                    temp[i] = this.records[i];
                 }
                 this.Capacity = minimumCapacity;
-                this.jewels = temp;
+                this.records = temp;
             }
         }
-        public Jewel Get(int index)
+        public Record Get(int index)
         {
-            return this.jewels[index];
+            return this.records[index];
         }
-        public bool Contains(Jewel jewel)
+
+        public bool Contains(Record record)
         {
             for (int i = 0; i < this.Count; i++)
             {
-                if (this.jewels[i].Equals(jewel))
+                if (this.records[i].Equals(record))
                 {
                     return true;
                 }
             }
             return false;
         }
-        public void Put(int index, Jewel jewel)
+
+        public void Put(int index, Record record)
         {
-            this.jewels[index] = jewel;
+            this.records[index] = record;
         }
-        public void Insert(int index, Jewel jewel)
+        public void Insert(int index, Record record)
         {
             if (this.Count == this.Capacity)
             {
@@ -66,78 +69,73 @@ namespace Jewelery_Shop
             }
             for (int i = Count + 1; i > index; i--)
             {
-                this.jewels[i] = this.jewels[i - 1];
+                this.records[i] = this.records[i - 1];
             }
-            this.jewels[index] = jewel;
+            this.records[index] = record;
+
             Count++;
         }
         public void RemoveAt(int index)
         {
             for (int i = index; i < Count; i++)
             {
-                this.jewels[i] = this.jewels[i + 1];
+                this.records[i] = this.records[i + 1];
             }
             Count--;
         }
-        public void Remove(Jewel jewel)
+        public void Remove(Record record)
         {
             for (int i = 0; i < Count; i++)
             {
-                if (this.jewels[i].Name == jewel.Name)
+                if (this.records[i].Name == record.Name)
                 {
                     RemoveAt(i);
                     return;
                 }
             }
         }
-        public void Sort()
+        public void Sort(RecordComparator comparator)
         {
             bool flag = true;
-            while(flag)
+            while (flag)
             {
                 flag = false;
-                for(int i = 0; i <this.Count-1;i++)
+                for (int i = 0; i < this.Count - 1; i++)
                 {
-                    Jewel a = this.jewels[i];
-                    Jewel b = this.jewels[i + 1];
-                    if(a.CompareManufacture(b) > 0 || (a.CompareManufacture(b) == 0 && a.ComparePrice(b) > 0))
+                    Record a = this.records[i];
+                    Record b = this.records[i + 1];
+                    if (comparator.Compare(a, b) > 0)
                     {
-                        this.jewels[i] = b;
-                        this.jewels[i + 1] = a;
+                        this.records[i] = b;
+                        this.records[i + 1] = a;
                         flag = true;
                     }
                 }
-            }        
+            }
         }
-        public JewelContainer(JewelContainer container) : this()
+        public void Sort()
+        {
+            Sort(new RecordComparator());
+        }
+        public RecordContainer(RecordContainer container) : this()
         {
             for (int i = 0; i < container.Count; i++)
             {
                 this.Add(container.Get(i));
             }
         }
-        public JewelContainer Intersect(JewelContainer other)
+        public RecordContainer Intersect(RecordContainer other)
         {
-            JewelContainer result = new JewelContainer();
+            RecordContainer result = new RecordContainer();
             for (int i = 0; i < this.Count; i++)
             {
-                Jewel current = this.jewels[i];
+                Record current = this.records[i];
                 if (other.Contains(current))
                 {
                     result.Add(current);
                 }
             }
             return result;
-        }
-        public int FindMaxPrice()
-        {
-            int maxPrice = int.MinValue;
-            for (int i = 0; i < this.Count; i++)
-            {
-                if (this.Get(i).Price > maxPrice)
-                    maxPrice = this.Get(i).Price;
-            }
-            return maxPrice;
         }
     }
 }

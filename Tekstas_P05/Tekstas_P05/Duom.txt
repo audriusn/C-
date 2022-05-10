@@ -1,0 +1,568 @@
+        intervals [1]:
+            xmin = 0 
+            xmax = 40.1919472058261 
+            text = "" 
+        intervals [2]:
+            xmin = 40.1919472058261 
+            xmax = 59.47954181947962 
+            text = "" 
+        intervals [3]:
+            xmin = 59.47954181947962 
+            xmax = 59.88689290576463 
+            text = "ns_ikvepimas" 
+        intervals [4]:
+            xmin = 59.88689290576463 
+            xmax = 67.18084438867818 
+            text = "" 
+        intervals [5]:
+            xmin = 67.18084438867818 
+            xmax = 67.51845443295332 
+            text = "ns_ikvepimas" 
+        intervals [6]:
+            xmin = 67.51845443295332 
+            xmax = 68.47283939392837 
+            text = "" 
+        intervals [7]:
+            xmin = 68.47283939392837 
+            xmax = 68.81520450924963 
+            text = "ns_aa" 
+        intervals [8]:
+            xmin = 68.81520450924963 
+            xmax = 74.4339668606308 
+            text = "" 
+        intervals [9]:
+            xmin = 74.4339668606308 
+            xmax = 74.69074069712175 
+            text = "ns_ikvepimas" 
+        intervals [10]:
+            xmin = 74.69074069712175 
+            xmax = 84.28367174006735 
+            text = "" 
+        intervals [11]:
+            xmin = 84.28367174006735 
+            xmax = 84.64505713957313 
+            text = "ns_ikvepimas" 
+        intervals [12]:
+            xmin = 84.64505713957313 
+            xmax = 92.59802496841147 
+            text = "" 
+        intervals [13]:
+            xmin = 92.59802496841147 
+            xmax = 92.97901136152265 
+            text = "ns_ikvepimas" 
+        intervals [14]:
+            xmin = 92.97901136152265 
+            xmax = 93.24529534010586 
+            text = "fp_eh" 
+        intervals [15]:
+            xmin = 93.24529534010586 
+            xmax = 95.53969519949949 
+            text = "" 
+        intervals [16]:
+            xmin = 95.53969519949949 
+            xmax = 96.26880609323922 
+            text = "ns_ikvepimas" 
+        intervals [17]:
+            xmin = 96.26880609323922 
+            xmax = 96.5062024294434 
+            text = "" 
+        intervals [18]:
+            xmin = 96.5062024294434 
+            xmax = 97.3304147441057 
+            text = "ns_kikena" 
+        intervals [19]:
+            xmin = 97.3304147441057 
+            xmax = 99.4088378206558 
+            text = "" 
+        intervals [20]:
+            xmin = 99.4088378206558 
+            xmax = 99.70999232024396 
+            text = "ns_ikvepimas" 
+        intervals [21]:
+            xmin = 99.70999232024396 
+            xmax = 101.20184583308642 
+            text = "" 
+        intervals [22]:
+            xmin = 101.20184583308642 
+            xmax = 101.51251047476683 
+            text = "ns_ikvepimas" 
+        intervals [23]:
+            xmin = 101.51251047476683 
+            xmax = 103.56105352804644 
+            text = "" 
+        intervals [24]:
+            xmin = 103.56105352804644 
+            xmax = 103.92243892755221 
+            text = "ns_ikvepimas" 
+        intervals [25]:
+            xmin = 103.92243892755221 
+            xmax = 110.77980916405883 
+            text = "" 
+        intervals [26]:
+            xmin = 110.77980916405883 
+            xmax = 111.09047380573924 
+            text = "ns_ikvepimas" 
+        intervals [27]:
+            xmin = 111.09047380573924 
+            xmax = 116.8605177963644 
+            text = "" 
+        intervals [28]:
+            xmin = 116.8605177963644 
+            xmax = 117.14582205913213 
+            text = "ns_ikvepimas" 
+        intervals [29]:
+            xmin = 117.14582205913213 
+            xmax = 119.07431498404705 
+            text = "" 
+        intervals [30]:
+            xmin = 119.07431498404705 
+            xmax = 119.78757564096635 
+            text = "ns_ikvepimas" 
+        intervals [31]:
+            xmin = 119.78757564096635 
+            xmax = 120.36452426122996 
+            text = "fp_eh" 
+        intervals [32]:
+            xmin = 120.36452426122996 
+            xmax = 120.7192649146585 
+            text = "ns_cepsi" 
+        intervals [33]:
+            xmin = 120.7192649146585 
+            xmax = 124.93711369117183 
+            text = "" 
+        intervals [34]:
+            xmin = 124.93711369117183 
+            xmax = 125.47285169570232 
+            text = "ns_ikvepimas" 
+        intervals [35]:
+            xmin = 125.47285169570232 
+            xmax = 130.02096232627113 
+            text = "" 
+        intervals [36]:
+            xmin = 130.02096232627113 
+            xmax = 130.43306848360228 
+            text = "ns_eh" 
+        intervals [37]:
+            xmin = 130.43306848360228 
+            xmax = 136.094380649327 
+            text = "" 
+        intervals [38]:
+            xmin = 136.094380649327 
+            xmax = 136.49697666456586 
+            text = "ns_ikvepia" 
+        intervals [39]:
+            xmin = 136.49697666456586 
+            xmax = 143.4344777740991 
+            text = "" 
+        intervals [40]:
+            xmin = 143.4344777740991 
+            xmax = 143.6754013737696 
+            text = "ns_ikvepia" 
+        intervals [41]:
+            xmin = 143.6754013737696 
+            xmax = 145.84170419697446 
+            text = "" 
+        intervals [42]:
+            xmin = 145.84170419697446 
+            xmax = 146.082627796645 
+            text = "ns_ikvepia" 
+        intervals [43]:
+            xmin = 146.082627796645 
+            xmax = 154.57138015045055 
+            text = "" 
+        intervals [44]:
+            xmin = 154.57138015045055 
+            xmax = 154.88838488685911 
+            text = "ns_ikvepia" 
+        intervals [45]:
+            xmin = 154.88838488685911 
+            xmax = 155.4431431755741 
+            text = "ns susikena" 
+        intervals [46]:
+            xmin = 155.4431431755741 
+            xmax = 170.97636284128242 
+            text = "" 
+        intervals [47]:
+            xmin = 170.97636284128242 
+            xmax = 171.4486998985312 
+            text = "fp_em" 
+        intervals [48]:
+            xmin = 171.4486998985312 
+            xmax = 174.77576536573642 
+            text = "" 
+        intervals [49]:
+            xmin = 174.77576536573642 
+            xmax = 175.19104157043165 
+            text = "ns_ikvepia" 
+        intervals [50]:
+            xmin = 175.19104157043165 
+            xmax = 181.1712475579172 
+            text = "" 
+        intervals [51]:
+            xmin = 181.1712475579172 
+            xmax = 181.43436148913634 
+            text = "ns_sukikena" 
+        intervals [52]:
+            xmin = 181.43436148913634 
+            xmax = 181.85597778855973 
+            text = "ns_ikvepia" 
+        intervals [53]:
+            xmin = 181.85597778855973 
+            xmax = 182.89997304352642 
+            text = "" 
+        intervals [54]:
+            xmin = 182.89997304352642 
+            xmax = 183.35011976922658 
+            text = "ns_ikvepia" 
+        intervals [55]:
+            xmin = 183.35011976922658 
+            xmax = 183.78441625810632 
+            text = "fp_eh" 
+        intervals [56]:
+            xmin = 183.78441625810632 
+            xmax = 185.33567449200265 
+            text = "" 
+        intervals [57]:
+            xmin = 185.33567449200265 
+            xmax = 185.52904738121188 
+            text = "fp_eh" 
+        intervals [58]:
+            xmin = 185.52904738121188 
+            xmax = 188.70072512690103 
+            text = "" 
+        intervals [59]:
+            xmin = 188.70072512690103 
+            xmax = 189.20476265779064 
+            text = "fp_eh" 
+        intervals [60]:
+            xmin = 189.20476265779064 
+            xmax = 189.689421743086 
+            text = "" 
+        intervals [61]:
+            xmin = 189.689421743086 
+            xmax = 190.46608334728697 
+            text = "ns_ikvepia" 
+        intervals [62]:
+            xmin = 190.46608334728697 
+            xmax = 199.13289159715796 
+            text = "" 
+        intervals [63]:
+            xmin = 199.13289159715796 
+            xmax = 199.97612419600478 
+            text = "ns_ikvepimas" 
+        intervals [64]:
+            xmin = 199.97612419600478 
+            xmax = 207.99073075835298 
+            text = "" 
+        intervals [65]:
+            xmin = 207.99073075835298 
+            xmax = 208.76105226782582 
+            text = "ns_ikvepia" 
+        intervals [66]:
+            xmin = 208.76105226782582 
+            xmax = 213.77111201524184 
+            text = "" 
+        intervals [67]:
+            xmin = 213.77111201524184 
+            xmax = 214.18638821993704 
+            text = "ns_ikvepia" 
+        intervals [68]:
+            xmin = 214.18638821993704 
+            xmax = 220.7467550414202 
+            text = "" 
+        intervals [69]:
+            xmin = 220.7467550414202 
+            xmax = 221.31102347222745 
+            text = "ns_ikvepia" 
+        intervals [70]:
+            xmin = 221.31102347222745 
+            xmax = 224.44154505755182 
+            text = "" 
+        intervals [71]:
+            xmin = 224.44154505755182 
+            xmax = 225.7254142400065 
+            text = "ns_juokiasi" 
+        intervals [72]:
+            xmin = 225.7254142400065 
+            xmax = 226.1216701605172 
+            text = "ns_ikvepia" 
+        intervals [73]:
+            xmin = 226.1216701605172 
+            xmax = 228.8523531611886 
+            text = "" 
+        intervals [74]:
+            xmin = 228.8523531611886 
+            xmax = 229.21690860805845 
+            text = "ns_suciapsi" 
+        intervals [75]:
+            xmin = 229.21690860805845 
+            xmax = 229.8255577019629 
+            text = "ns_ikvepia" 
+        intervals [76]:
+            xmin = 229.8255577019629 
+            xmax = 232.18569954121588 
+            text = "" 
+        intervals [77]:
+            xmin = 232.18569954121588 
+            xmax = 233.29521611864587 
+            text = "ns_atsidustant" 
+        intervals [78]:
+            xmin = 233.29521611864587 
+            xmax = 233.85143764162908 
+            text = "ns_ikvepia" 
+        intervals [79]:
+            xmin = 233.85143764162908 
+            xmax = 234.34279498306233 
+            text = "fp_ih" 
+        intervals [80]:
+            xmin = 234.34279498306233 
+            xmax = 238.00640794368294 
+            text = "" 
+        intervals [81]:
+            xmin = 238.00640794368294 
+            xmax = 238.94474196345232 
+            text = "ns_juokiasi" 
+        intervals [82]:
+            xmin = 238.94474196345232 
+            xmax = 239.2997872682299 
+            text = "ns_ikvepia" 
+        intervals [83]:
+            xmin = 239.2997872682299 
+            xmax = 240.97878248629007 
+            text = "" 
+        intervals [84]:
+            xmin = 240.97878248629007 
+            xmax = 241.38454854889304 
+            text = "ns ikvepia" 
+        intervals [85]:
+            xmin = 241.38454854889304 
+            xmax = 243.82206383058667 
+            text = "" 
+        intervals [86]:
+            xmin = 243.82206383058667 
+            xmax = 244.01860676715998 
+            text = "fp_ea" 
+        intervals [87]:
+            xmin = 244.01860676715998 
+            xmax = 246.7600903250112 
+            text = "" 
+        intervals [88]:
+            xmin = 246.7600903250112 
+            xmax = 247.43531041356144 
+            text = "ns_ikvepia" 
+        intervals [89]:
+            xmin = 247.43531041356144 
+            xmax = 248.4076868848568 
+            text = "ns_numykia" 
+        intervals [90]:
+            xmin = 248.4076868848568 
+            xmax = 248.49010811632303 
+            text = "" 
+        intervals [91]:
+            xmin = 248.49010811632303 
+            xmax = 251.9457348559407 
+            text = "" 
+        intervals [92]:
+            xmin = 251.9457348559407 
+            xmax = 252.35467096590776 
+            text = "ns_ikvepia" 
+        intervals [93]:
+            xmin = 252.35467096590776 
+            xmax = 258.65827434928343 
+            text = "" 
+        intervals [94]:
+            xmin = 258.65827434928343 
+            xmax = 259.0323399382456 
+            text = "ns_ikvepia" 
+        intervals [95]:
+            xmin = 259.0323399382456 
+            xmax = 262.4481075497391 
+            text = "" 
+        intervals [96]:
+            xmin = 262.4481075497391 
+            xmax = 262.7619422387837 
+            text = "ns_ikvepia" 
+        intervals [97]:
+            xmin = 262.7619422387837 
+            xmax = 264.9046601311536 
+            text = "" 
+        intervals [98]:
+            xmin = 264.9046601311536 
+            xmax = 265.11705330454737 
+            text = "fp_eh" 
+        intervals [99]:
+            xmin = 265.11705330454737 
+            xmax = 265.6388704333643 
+            text = "" 
+        intervals [100]:
+            xmin = 265.6388704333643 
+            xmax = 265.64521052809243 
+            text = "ns_ikvepia" 
+        intervals [101]:
+            xmin = 265.64521052809243 
+            xmax = 265.9780655013215 
+            text = "" 
+        intervals [102]:
+            xmin = 265.9780655013215 
+            xmax = 266.0541466380596 
+            text = "ns_suciapsi" 
+        intervals [103]:
+            xmin = 266.0541466380596 
+            xmax = 267.56730795760336 
+            text = "" 
+        intervals [104]:
+            xmin = 267.56730795760336 
+            xmax = 267.9540537360219 
+            text = "ns_ikvepia" 
+        intervals [105]:
+            xmin = 267.9540537360219 
+            xmax = 268.4980057957117 
+            text = "" 
+        intervals [106]:
+            xmin = 268.4980057957117 
+            xmax = 268.8055003900281 
+            text = "fp_ih" 
+        intervals [107]:
+            xmin = 268.8055003900281 
+            xmax = 277.0021464132001 
+            text = "" 
+        intervals [108]:
+            xmin = 277.0021464132001 
+            xmax = 277.29379077069603 
+            text = "ns_sukikena" 
+        intervals [109]:
+            xmin = 277.29379077069603 
+            xmax = 277.6520061228378 
+            text = "ns_ikvepia" 
+        intervals [110]:
+            xmin = 277.6520061228378 
+            xmax = 279.1534815244316 
+            text = "" 
+        intervals [111]:
+            xmin = 279.1534815244316 
+            xmax = 279.56241763439874 
+            text = "ns_ikvepia" 
+        intervals [112]:
+            xmin = 279.56241763439874 
+            xmax = 281.7735137374788 
+            text = "" 
+        intervals [113]:
+            xmin = 281.7735137374788 
+            xmax = 282.0049271950571 
+            text = "fp_um" 
+        intervals [114]:
+            xmin = 282.0049271950571 
+            xmax = 282.72135789934066 
+            text = "fp_eh" 
+        intervals [115]:
+            xmin = 282.72135789934066 
+            xmax = 284.9207136291025 
+            text = "" 
+        intervals [116]:
+            xmin = 284.9207136291025 
+            xmax = 285.24722850760344 
+            text = "ns_ikvepia" 
+        intervals [117]:
+            xmin = 285.24722850760344 
+            xmax = 288.96015722837984 
+            text = "" 
+        intervals [118]:
+            xmin = 288.96015722837984 
+            xmax = 289.7431589273092 
+            text = "ns_ikvepia" 
+        intervals [119]:
+            xmin = 289.7431589273092 
+            xmax = 292.74188717502784 
+            text = "" 
+        intervals [120]:
+            xmin = 292.74188717502784 
+            xmax = 293.72460185789464 
+            text = "ns_ikvepia" 
+        intervals [121]:
+            xmin = 293.72460185789464 
+            xmax = 293.9833069461075 
+            text = "fp_eh" 
+        intervals [122]:
+            xmin = 293.9833069461075 
+            xmax = 296.5879588304034 
+            text = "" 
+        intervals [123]:
+            xmin = 296.5879588304034 
+            xmax = 296.99689494037057 
+            text = "fp_eh" 
+        intervals [124]:
+            xmin = 296.99689494037057 
+            xmax = 301.20346757978945 
+            text = "" 
+        intervals [125]:
+            xmin = 301.20346757978945 
+            xmax = 301.552172789839 
+            text = "ns_ikvepia" 
+        intervals [126]:
+            xmin = 301.552172789839 
+            xmax = 306.7094024223814 
+            text = "" 
+        intervals [127]:
+            xmin = 306.7094024223814 
+            xmax = 307.05493758506685 
+            text = "ns_ikvepia" 
+        intervals [128]:
+            xmin = 307.05493758506685 
+            xmax = 315.6093910701403 
+            text = "" 
+        intervals [129]:
+            xmin = 315.6093910701403 
+            xmax = 315.9359059486412 
+            text = "ns_ikvepia" 
+        intervals [130]:
+            xmin = 315.9359059486412 
+            xmax = 321.0777036329868 
+            text = "" 
+        intervals [131]:
+            xmin = 321.0777036329868 
+            xmax = 321.36934799048277 
+            text = "ns_ikvepia" 
+        intervals [132]:
+            xmin = 321.36934799048277 
+            xmax = 324.0152677818026 
+            text = "" 
+        intervals [133]:
+            xmin = 324.0152677818026 
+            xmax = 324.3005720445704 
+            text = "ns_ikvepia" 
+        intervals [134]:
+            xmin = 324.3005720445704 
+            xmax = 327.0293256841348 
+            text = "" 
+        intervals [135]:
+            xmin = 327.0293256841348 
+            xmax = 327.1941681470673 
+            text = "fp_em" 
+        intervals [136]:
+            xmin = 327.1941681470673 
+            xmax = 333.2499299625458 
+            text = "" 
+        intervals [137]:
+            xmin = 333.2499299625458 
+            xmax = 333.2752903414585 
+            text = "" 
+        intervals [138]:
+            xmin = 333.2752903414585 
+            xmax = 333.2879705309149 
+            text = "ns_ikvepia" 
+        intervals [139]:
+            xmin = 333.2879705309149 
+            xmax = 333.5605946042263 
+            text = "ns_ikvepia" 
+        intervals [140]:
+            xmin = 333.5605946042263 
+            xmax = 347.3782407724659 
+            text = "" 
+        intervals [141]:
+            xmin = 347.3782407724659 
+            xmax = 347.7427962193359 
+            text = "ns_ikvepia" 
+        intervals [142]:
+            xmin = 347.7427962193359 
+            xmax = 1890.6151473922903 
+            text = "" 

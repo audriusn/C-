@@ -1,0 +1,8 @@
+Petriukas, programuotojo sunus, eina i pirma klase.
+Mokytoja vaikams aikina:
+- Vaikai, pamokose reikia buti tyliems, jei noresite ka˛ko paklausti, pirma
+- Vaikai, pamokose reikia buti tyliems, jei noresite ka˛ko paklausti, pirma
+pakelkite ranka.
+Petriukas ikart pakelia ranka. Mokytoja klausia:
+- Na, Petriuk, ka norejai paklausti?
+- Nieko. Tiesiog testuoju sistema.

@@ -1,0 +1,142 @@
+
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_aa" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepimas" 
+text = "fp_eh" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_kikena" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepimas" 
+text = "fp_eh" 
+text = "ns_cepsi" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_eh" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+text = "ns susikena" 
+
+text = "fp_em" 
+
+text = "ns_ikvepia" 
+
+text = "ns_sukikena" 
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+text = "fp_eh" 
+
+text = "fp_eh" 
+
+text = "fp_eh" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepimas" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_juokiasi" 
+text = "ns_ikvepia" 
+
+text = "ns_suciapsi" 
+text = "ns_ikvepia" 
+
+text = "ns_atsidustant" 
+text = "ns_ikvepia" 
+text = "fp_ih" 
+
+text = "ns_juokiasi" 
+text = "ns_ikvepia" 
+
+text = "ns ikvepia" 
+
+text = "fp_ea" 
+
+text = "ns_ikvepia" 
+text = "ns_numykia" 
+
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "fp_eh" 
+
+text = "ns_ikvepia" 
+
+text = "ns_suciapsi" 
+
+text = "ns_ikvepia" 
+
+text = "fp_ih" 
+
+text = "ns_sukikena" 
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "fp_um" 
+text = "fp_eh" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+text = "fp_eh" 
+
+text = "fp_eh" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+
+text = "fp_em" 
+
+
+text = "ns_ikvepia" 
+text = "ns_ikvepia" 
+
+text = "ns_ikvepia" 
+

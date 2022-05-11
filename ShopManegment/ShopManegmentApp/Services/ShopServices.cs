@@ -19,10 +19,10 @@ namespace ShopManegmentApp.Services
             var item = new ShopItem()
             {
                 Name = name,
-                Qty = qty
+                Quantity = qty
             };
-
-            _items.Add(item);
+   
+                _items.Add(item);
         }
         public void Remove(string name)
         {
@@ -31,6 +31,15 @@ namespace ShopManegmentApp.Services
         public List<ShopItem> GetAll()
         {
             return _items;
+        }
+        public void Update(string name, string qty)
+        {
+           var item = _items.First(i => i.Name == name);
+            item.Quantity = qty;
+        }
+        public void Exit()
+        {
+           
         }
     }
 }

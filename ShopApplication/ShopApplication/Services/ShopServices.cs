@@ -16,7 +16,6 @@ namespace ShopApplication.Services
         {
             _items = new List<ShopItem> ();
             _cart = new List<ShopItem>();
-
         }
         public void Add (string name, int quantity, decimal price)
         {
@@ -48,8 +47,7 @@ namespace ShopApplication.Services
         public void Buy (string name, int quantity)  
         {
             try
-            {
-              
+            {          
                 var item = _items.First(i => i.Name == name);
                 if (item.Quantity >= quantity)
                 {
@@ -72,10 +70,8 @@ namespace ShopApplication.Services
           catch (Exception )
             {
                 Console.WriteLine("Shop item is not found");
-            }
-            
-        }
-        
+            }          
+        }     
         public decimal CustomerBalance()
         {
             return _customer.Wallet;

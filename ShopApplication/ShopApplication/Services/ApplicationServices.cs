@@ -16,9 +16,9 @@ namespace ShopApplication.Services
             _shopService = new ShopServices();
         }
         public void Process(string command)
-        {
-            
-                if (command.StartsWith("Add".ToLower()))
+        {         
+           
+            if (command.StartsWith("Add".ToLower()))
                 {
                     try
                     {
@@ -73,17 +73,16 @@ namespace ShopApplication.Services
                 else if (command.StartsWith("Buy".ToLower()))
                 {
                 try
-                {
-                    string[] parts = command.Split(" ");
+                    {
+                        string[] parts = command.Split(" ");
 
-                    _shopService.Buy(parts[1], int.Parse(parts[2]));
+                        _shopService.Buy(parts[1], int.Parse(parts[2]));
 
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("The command was not recognized");
-                }
-
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("The command was not recognized");
+                    }
                  }
                 else if (command.StartsWith("Balance".ToLower()))
                 {
@@ -92,24 +91,24 @@ namespace ShopApplication.Services
 
                 else if (command.StartsWith("Cart".ToLower()))
                 {
-                try
-                {
-                    List<ShopItem> cart = _shopService.GetCart();
+                    try
+                    {
+                        List<ShopItem> cart = _shopService.GetCart();
 
-                    cart.ForEach(cart => Console.WriteLine($"ItemName: {cart.Name} "));
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("The command was not recognized");
-                }
-            }
+                        cart.ForEach(cart => Console.WriteLine($"ItemName: {cart.Name} "));
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("The command was not recognized");
+                    }
+                 }
                 else if (command.StartsWith("Topup".ToLower()))
                 {
-                string[] parts = command.Split(" ");
+                  string[] parts = command.Split(" ");
 
-                _shopService.Topup(decimal.Parse(parts[1]));
-                Console.WriteLine("Top Up done. Your balance {0}:", _shopService.CustomerBalance());
-            }
+                  _shopService.Topup(decimal.Parse(parts[1]));
+                  Console.WriteLine("Top Up done. Your balance {0}:", _shopService.CustomerBalance());
+                 }
             else
                     Console.WriteLine("Incorret command");
           

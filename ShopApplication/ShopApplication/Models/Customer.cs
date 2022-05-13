@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ShopApplication.Models
 {
-    public class ShopItem
+    public class Customer
     {
-        public string Name { get; set; }
-        public int Quantity { get; set; }
-        public decimal Price { get; set; }  
-      
-
+        public decimal Wallet { get; set; }
+        public Customer (decimal wallet = 20)
+        {
+            Wallet = wallet;
+        }
     }
 }

@@ -15,7 +15,7 @@ Customer by default has 20 euros (balance)
 
 "Topup <sum>" -> Should top the customer's balance.
 
-"Show items" -> Should display the names of bought items
+"Cart" -> Should display the names of bought items
 
 "Buy <ShopItemName> <Quantity>" - If user has enough money and the shop has enough items
 	update the Customer balance. 

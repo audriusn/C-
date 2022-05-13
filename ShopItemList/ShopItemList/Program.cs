@@ -78,3 +78,13 @@ shopItems.Add(new ShopItem()
 
 int largestQuantity = shopItems.OrderByDescending(s =>s.Quantity).Select(s => s.Quantity).First();
 Console.WriteLine(largestQuantity);
+
+// Check if item named "Apple" exist
+bool doesExist = shopItems.Any(si => si.Name.ToLower() == "apple");
+
+//Get first item where QTY is more that 100
+ShopItem item = shopItems.Where(si => si.Quantity > 100).FirstOrDefault();
+if(item != null)
+{
+    Console.WriteLine(item.Name);
+}

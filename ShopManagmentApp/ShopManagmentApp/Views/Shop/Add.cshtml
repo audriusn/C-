@@ -1,0 +1,23 @@
+﻿@model ShopItem
+
+<h2>Please add some items to shop:</h2>
+
+
+ <form  action="/Shop/Add" method="post">
+  <div class="form-row">
+    <div class="col-5">
+      <input type="text" class="form-control" placeholder="Name" name="Name" >
+    </div>
+    <div class="col-4">
+      <input type="text" class="form-control" placeholder="ShopName"  name="ShopName" >
+    </div>
+    <div class="col">
+      <input type="datetime" class="form-control" placeholder="ExpireDate" name="ExpireDate" >
+    </div>
+    <div class="col">
+         <input type="submit" value="Submit"/>
+    </div>  
+  </div>
+</form>
+
+

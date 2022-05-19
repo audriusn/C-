@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ShopManagmentApp.Data;
 using ShopManagmentApp.Services;
 using System;
 using System.Collections.Generic;
@@ -25,7 +27,12 @@ namespace ShopManagmentApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddSingleton<ShopService>();
+
+            var defaultConnectionString = Configuration.GetConnectionString("Default");
+
+            services.AddDbContext<DataContext>(c => c.UseSqlServer(defaultConnectionString));
+
+            services.AddTransient<ShopService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

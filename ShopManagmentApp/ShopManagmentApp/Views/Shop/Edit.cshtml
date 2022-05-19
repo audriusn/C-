@@ -5,22 +5,25 @@
  @using(Html.BeginForm("Edit", "Shop", FormMethod.Post ))
  {
 
-  <div class="row bg-secondary bg-gradient p-2 text-white bg-opacity-25">
-    <div class="col">
+ <form>
+  <div class="form-row">
+    <div class="col-5">
      <label asp-for ="Name"></label>
-     <input asp-for ="Name" class="form-check control">
+     <input asp-for ="Name" class="form-control" readonly>
     </div>
-    <div class="col">
-    <label asp-for ="ShopName"></label>
-     <input asp-for ="ShopName" class="form-check control">
+    <div class="col-4">
+      <label asp-for ="ShopName"></label>
+     <input asp-for ="ShopName" class="form-control">
     </div>
     <div class="col">
      <label asp-for ="ExpireDate"></label>
-     <input asp-for ="ExpireDate" class="form-check control">
+     <input asp-for ="ExpireDate" class="form-control">
     </div>
-    <div class="col">
-         <button type="submit" class="btn btn-dark">Edit</button>
+    <div class="col-1">
+         <button type="submit" class="btn btn-dark">Update</button>
     </div>  
   </div>
+</form>
+
 
  }

@@ -4,7 +4,6 @@
 
 <table>
 
-
 <table class="table">
   <thead>
     <tr>
@@ -12,8 +11,8 @@
       <th scope="col">Name</th>
       <th scope="col">Shop Name</th>
       <th scope="col">Expire Date</th>
-      <th scope="col">Actions</th>
-      <th scope="col"></th>
+      <th scope="col">Remove</th>
+      <th scope="col">Edit</th>
       
     </tr>
   </thead>
@@ -26,10 +25,8 @@
           <td>@shop.ShopName</td>
           <td>@shop.ExpireDate.ToString("yyy/MM/dd")</td>
           <td>@Html.ActionLink("Remove", "Delete", "Shop", new { Name = @shop.Name})</td>
-          <td>@Html.ActionLink("Edit", "Update", "Shop", new { Name = @shop.Name})</td>
+          <td>@Html.ActionLink("Edit", "Edit", "Shop", new { Name = @shop.Name})</td>
         </tr>
-        }
-    
-    
+        }   
   </tbody>
 </table>

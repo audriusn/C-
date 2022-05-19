@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopManagmentApp.Models;
 using ShopManagmentApp.Services;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ShopManagmentApp.Controllers
 {
@@ -8,6 +10,10 @@ namespace ShopManagmentApp.Controllers
     {
         private ShopService _shopService;
 
+        private List<ShopItem> _shopItem = new List<ShopItem>
+        {
+
+        };
         public ShopController (ShopService shopService)
         {
             _shopService = shopService;
@@ -21,7 +27,7 @@ namespace ShopManagmentApp.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            ShopItem shopItem = new ShopItem(); //Passing empty model
+            ShopItem shopItem = new ShopItem(); 
             return View(shopItem);
         }
         [HttpPost]
@@ -35,5 +41,19 @@ namespace ShopManagmentApp.Controllers
             _shopService.Delete(name);
             return RedirectToAction("Index");
         }
+       
+        public IActionResult Edit (string name)
+        {
+            var shopItem = _shopService.Get(name);
+            return View(shopItem);
+        }
+        [HttpPost]
+        public IActionResult Edit (ShopItem shopitem)
+        {
+            _shopService.Update(shopitem);
+            return RedirectToAction("Index");
+        }
+
     }
+  
 }

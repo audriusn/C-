@@ -10,5 +10,8 @@ namespace ShopManagmentApp.Models
         public string ShopName { get; set; }
 
         public DateTime ExpireDate { get; set; }
+        public Shop Shop { get; set; }
+
+        public int? ShopId { get; set; }
     }
 }

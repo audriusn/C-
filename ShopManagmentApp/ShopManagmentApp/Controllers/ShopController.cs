@@ -1,39 +1,32 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopManagmentApp.Models;
 using ShopManagmentApp.Services;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace ShopManagmentApp.Controllers
 {
     public class ShopController : Controller
     {
-        private ShopService _shopService;
-
-        private List<ShopItem> _shopItem = new List<ShopItem>
-        {
-
-        };
-        public ShopController (ShopService shopService)
+        private readonly ShopService _shopService;
+        public ShopController(ShopService shopService)
         {
             _shopService = shopService;
         }
 
         public IActionResult Index()
         {
-            var shopItems = _shopService.GetAll();
-            return View(shopItems);
+            var shop = _shopService.GetAll();
+            return View(shop);
         }
         [HttpGet]
         public IActionResult Add()
         {
-            ShopItem shopItem = new ShopItem(); 
-            return View(shopItem);
+            Shop shop= new Shop();
+            return View(shop);
         }
         [HttpPost]
-        public IActionResult Add(ShopItem shopItem)
+        public IActionResult Add(Shop shop)
         {
-            _shopService.Add(shopItem);
+            _shopService.Add(shop);
             return RedirectToAction("Index");
         }
         public IActionResult Delete(string name)
@@ -41,19 +34,7 @@ namespace ShopManagmentApp.Controllers
             _shopService.Delete(name);
             return RedirectToAction("Index");
         }
-       
-        public IActionResult Edit (string name)
-        {
-            var shopItem = _shopService.Get(name);
-            return View(shopItem);
-        }
-        [HttpPost]
-        public IActionResult Edit (ShopItem shopitem)
-        {
-            _shopService.Update(shopitem);
-            return RedirectToAction("Index");
-        }
-
     }
-  
+
 }
+

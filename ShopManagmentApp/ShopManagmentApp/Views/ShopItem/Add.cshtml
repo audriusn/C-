@@ -1,0 +1,26 @@
+﻿@using ShopManagmentApp.Dtos
+@model CreateShopItemDto
+
+
+
+<h2>Please add some items to shop:</h2>
+
+
+ <form  action="/ShopItem/Add" method="post">
+  <div class="form-row">
+    <div class="col-5">
+      <input type="text" class="form-control" placeholder="Name" name="Name" >
+    </div>
+    <div class="col-4">
+      <input type="text" class="form-control" placeholder="ShopName"  name="ShopName" >
+    </div>
+    <div class="col">
+      <input type="datetime" class="form-control" placeholder="ExpireDate" name="ExpireDate" >
+    </div>
+    <div class="col">
+         <button type="submit" class="btn btn-dark">Add</button>
+    </div>  
+  </div>
+</form>
+
+

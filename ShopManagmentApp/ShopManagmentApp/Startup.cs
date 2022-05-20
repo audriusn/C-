@@ -7,10 +7,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopManagmentApp.Data;
 using ShopManagmentApp.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ShopManagmentApp
 {
@@ -32,6 +28,7 @@ namespace ShopManagmentApp
 
             services.AddDbContext<DataContext>(c => c.UseSqlServer(defaultConnectionString));
 
+            services.AddTransient<ShopItemService>();
             services.AddTransient<ShopService>();
         }
 

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShopManagmentApp.Data;
 
@@ -11,9 +12,10 @@ using ShopManagmentApp.Data;
 namespace ShopManagmentApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20220520165040_addshop")]
+    partial class addshop
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,31 +54,12 @@ namespace ShopManagmentApp.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ShopId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ShopName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ShopId");
-
                     b.ToTable("ShopItems");
-                });
-
-            modelBuilder.Entity("ShopManagmentApp.Models.ShopItem", b =>
-                {
-                    b.HasOne("ShopManagmentApp.Models.Shop", "Shop")
-                        .WithMany("ShopItems")
-                        .HasForeignKey("ShopId");
-
-                    b.Navigation("Shop");
-                });
-
-            modelBuilder.Entity("ShopManagmentApp.Models.Shop", b =>
-                {
-                    b.Navigation("ShopItems");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ShopManagmentApp.Dtos;
 using ShopManagmentApp.Models;
 using ShopManagmentApp.Services;
 using System.Collections.Generic;
@@ -9,11 +10,13 @@ namespace ShopManagmentApp.Controllers
     public class ShopItemController : Controller
     {
         private ShopItemService _shopItemService;
+        private ShopService _shopService;
 
        
-        public ShopItemController (ShopItemService shopItemService)
+        public ShopItemController (ShopItemService shopItemService, ShopService shopService)
         {
             _shopItemService = shopItemService;
+            _shopService = shopService;
         }
 
         public IActionResult Index()
@@ -24,7 +27,7 @@ namespace ShopManagmentApp.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            ShopItem shopItem = new ShopItem(); 
+            CreateShopItemDto shopItem = new CreateShopItemDto(); 
             return View(shopItem);
         }
         [HttpPost]

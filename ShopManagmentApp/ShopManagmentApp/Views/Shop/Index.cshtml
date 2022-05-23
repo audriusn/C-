@@ -8,7 +8,7 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">ShopId</th>
+      <th scope="col">Id</th>
       <th scope="col">Shop Name</th>
       <th scope="col">Remove</th>
       
@@ -19,7 +19,7 @@
         {
         <tr>
           <th scope="row"></th>
-          <td>@shop.ShopId</td>
+          <td>@shop.Id</td>
           <td>@shop.Name</td>
           <td>@Html.ActionLink("Remove", "Delete", "Shop", new { Name = @shop.Name})</td>
         </tr>

@@ -1,0 +1,24 @@
+﻿@model Books
+
+<h2>Edit</h2>
+
+ @using(Html.BeginForm("Edit", "Book", FormMethod.Post ))
+ {
+
+ <form>
+  <div class="form-row">
+    <div class="col-5">
+     <label asp-for ="Title"></label>
+     <input asp-for ="Title" class="form-control" >
+    </div>
+    <div class="col-4">
+      <label asp-for ="AuthorName"></label>
+     <input asp-for ="AuthorName" class="form-control">
+    </div>
+    <div class="col-1">
+         <button type="submit" class="btn btn-dark">Update</button>
+    </div>  
+  </div>
+</form>
+
+ }

@@ -1,0 +1,32 @@
+﻿@model List<Books>
+
+<h3>Books List </h3>
+
+<table>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Remove</th>
+      <th scope="col">Edit</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var book in @Model)
+        {
+        <tr>
+          <th scope="row"></th>
+          <td>@book.Id</td>
+          <td>@book.Title</td>
+          <td>@book.Author.Name</td>
+          <td>@Html.ActionLink("Remove", "Delete", "Book", new { Title = @book.Title})</td>
+          <td>@Html.ActionLink("Edit", "Edit", "Book", new { Title = @book.Title})</td>
+        </tr>
+        }   
+  </tbody>
+</table>
